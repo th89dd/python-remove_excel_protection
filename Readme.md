@@ -128,6 +128,17 @@ dist/
 pip install dist/excel_protection_remover-0.1-py3-none-any.whl
 ```
 
+4. Executable mit `PyInstaller` erstellen (optional):
+
+Paket installieren:
+```bash
+pip install pyinstaller
+```
+Executable bauen:
+```bash
+pyinstaller --onefile --name excel-unlock excel_protection_remover/cli.py
+```
+
 4. Weitere nützliche Befehle:
 * Pakete listen: `pip list`
 * Paket deinstallieren: `pip uninstall excel_protection_remover`

@@ -8,8 +8,8 @@
 
 # -------- start import block ---------
 import argparse
-from .logger import LoggerFactory
-from .remover import ExcelProtectionRemover
+from excel_protection_remover.logger import LoggerFactory
+from excel_protection_remover.remover import ExcelProtectionRemover
 
 # -------- /import block ---------
 """Kommandozeileninterface für excel_protection_remover.
