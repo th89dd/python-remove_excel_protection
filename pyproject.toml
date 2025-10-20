@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "excel-protection-remover"
+version = "1.2.0"
+description = "Werkzeug zum Entfernen von Blattschutz und Arbeitsmappenschutz aus Excel-Dateien."
+authors = [
+    { name = "Tim Häberlein" }
+]
+license-files = ["LICENSE"]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+# optional: Schlagwörter für PyPI
+keywords = ["excel", "schutz", "entsperren", "xlsx", "cli"]
+
+# Einstellbar über CLI
+[project.scripts]
+excel-unlock = "excel_protection_remover.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["excel_protection_remover*"]
